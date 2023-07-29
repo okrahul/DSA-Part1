@@ -19,4 +19,4 @@ myMap.set("name2", "Rahul");
 myMap.delete("name");
 myMap.has("name");
 //size clear also their
-console.log(myMap);
+// console.log(myMap);

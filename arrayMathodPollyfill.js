@@ -15,7 +15,7 @@ const newArray = useMap(array, function (element) {
   return element * 2;
 });
 
-console.log(">>", newArray); // [2, 4, 6, 8, 10]
+// console.log(">>", newArray); // [2, 4, 6, 8, 10]
 
 // example two
 
@@ -33,4 +33,4 @@ const out = [2, 4, 5, 3, 6, 4].thisMap((ele, i) => {
   return ele * 8;
 });
 
-console.log("return", out);
+// console.log("return", out);
