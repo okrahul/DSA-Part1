@@ -118,7 +118,7 @@ function goon() {
 // closures example
 
 const createCount = () => {
-  const count = 0;
+  let count = 0;
 
   const increment = () => {
     count++;
@@ -140,5 +140,52 @@ const createCount = () => {
 };
 
 const counter = createCount();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.decrement();
 
-counter.getCount();
+// console.log(counter.getCount());
+
+const generateRandomNo = (min, max) => {
+  min = typeof min === "number" ? min : 0;
+  max = typeof max === "number" ? max : 100;
+
+  const generator = () => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  return generator;
+};
+
+const generate = generateRandomNo(10, 60);
+
+// console.log(generate());
+
+// IFFE FUNCTION
+
+// const credit = ((num) => {
+//   let credits = num;
+//   console.log(`credits is now ${credits}`);
+//   return () => {
+//     credits -= 1;
+//     if (credits > 0) console.log(`you have credits ${credits}`);
+//     if (credits <= 0) console.log(`now you have nothing`);
+//   };
+// })(3);
+
+// credit();
+
+// __proto__
+
+const human = {
+  talk: true,
+};
+
+const singer = {
+  singing: true,
+};
+
+Object.setPrototypeOf(singer, human);
+
+console.log(">>", Object.getPrototypeOf(human));
