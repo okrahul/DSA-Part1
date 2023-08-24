@@ -10,7 +10,7 @@ function checkZero(arr) {
   }
 }
 //o(n^2) quadratic time complexity
-console.log("sol1", checkZero([-5, -4, -3, -2, 0, 2, 4, 6, 8]));
+// console.log("sol1", checkZero([-5, -4, -3, -2, 0, 2, 4, 6, 8]));
 // _______________________________________________________________________;
 
 // 🚀 optimize solution
@@ -31,7 +31,7 @@ function findZeroPair(arr) {
   }
 }
 // o(n) linear
-console.log("sol2", findZeroPair([-5, -4, -3, -2, 0, 2, 4, 6, 8]));
+// console.log("sol2", findZeroPair([-5, -4, -3, -2, 0, 2, 4, 6, 8]));
 // _______________________________________________________________________;
 
 // 🙋‍♂️question: - checking Anagram of string
@@ -53,7 +53,7 @@ function checkAnagram(string1, string2) {
   return true;
 }
 //linear time complexity
-console.log("sol3", checkAnagram("rahul", "rauhl"));
+// console.log("sol3", checkAnagram("rahul", "rauhl"));
 // _______________________________________________________________________;
 
 // 🙋‍♂️question: - count unique number
@@ -74,4 +74,4 @@ function count(arr) {
   }
 }
 //o(n) linear
-console.log("sol4", count([1, 1, 2, 2, 3, 4, 4, 5, 6, 7, 8, 8]));
+// console.log("sol4", count([1, 1, 2, 2, 3, 4, 4, 5, 6, 7, 8, 8]));
